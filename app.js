@@ -8,6 +8,7 @@
             $scope.message = lunch_fun()            
         }
         let lunch_fun = function () {
+            console.log(".......", $scope.lunch_menu.length)
             let list_lunch_menu = $scope.lunch_menu.split(",")
             if ($scope.lunch_menu.length <= 0){
                 return 'Empty'
