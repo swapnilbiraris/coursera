@@ -9,10 +9,14 @@
         }
         let lunch_fun = function () {
             let list_lunch_menu = $scope.lunch_menu.split(",")
-            if (list_lunch_menu.length <= 3){
-                return "Enjoy!"
+            if (list_lunch_menu.length <= 0){
+                'Empty'
             } else {
-                return "Too much!"
+                if (list_lunch_menu.length <= 3){
+                    return "Enjoy!"
+                } else {
+                    return "Too much!"
+                }
             }
         }
     })
