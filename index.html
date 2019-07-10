@@ -16,14 +16,15 @@
 
          <div class="form-group">
              <input id="lunch-menu" type="text"
-             ng-model={{lunch_menu}}
+             ng-model="lunch_menu"
              class="form-control">
          </div>
          <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
+             <button class="btn btn-default" ng-click="check" >Check If Too Much</button>
          </div>
          {{lunch_menu}}
          <div class="form-group message">
+           {{message}}
            <!-- Your message can go here. -->
          </div>
    </div>
